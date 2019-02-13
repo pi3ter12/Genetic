@@ -1,0 +1,5 @@
+gradle/gradle-4.9-all/
+out/
+.idea/
+.gradle/
+Genetic.iml

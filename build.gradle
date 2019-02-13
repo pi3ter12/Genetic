@@ -1,0 +1,17 @@
+apply plugin: 'java'
+
+repositories {
+    jcenter()
+}
+sourceSets {
+    main.java.srcDirs = ['src']
+}
+dependencies {
+    compile 'org.reflections:reflections:0.9.11'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'pl.wiacekp.Main'
+    }
+}
