@@ -9,6 +9,6 @@ import java.util.List;
 public class Learn implements StartProcess {
     @Override
     public void run(List<String> args) {
-        System.out.println("test");
+        Board board = new Board();
     }
 }
