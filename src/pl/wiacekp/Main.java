@@ -1,17 +1,13 @@
 package pl.wiacekp;
 
-import pl.wiacekp.command.ArgInterpreter;
+import pl.wiacekp.command.StartProcessStore;
 
 public class Main {
     public static void main(String[] args) {
         if (args == null || args.length == 0) {
-            start("learn");
+            StartProcessStore.start("learn");
         } else {
-            start(args);
+            StartProcessStore.start(args);
         }
-    }
-
-    private static void start(String... args) {
-        new ArgInterpreter().run(args);
     }
 }
