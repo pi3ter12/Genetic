@@ -15,9 +15,8 @@ public class StartProcessStore {
 
     private static void addAll() {
         Reflections reflections = new Reflections(PACKAGE_TO_SEARCH);
-        Iterator<Class<? extends StartProcess>> iterator = reflections.getSubTypesOf(StartProcess.class).iterator();
-        while (iterator.hasNext()) {
-            add(iterator.next());
+        for (Class<? extends StartProcess> aClass : reflections.getSubTypesOf(StartProcess.class)) {
+            add(aClass);
         }
     }
 
